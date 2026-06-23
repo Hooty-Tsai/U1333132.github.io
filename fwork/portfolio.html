@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>作品與榮譽 - 蔡閔宣</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<button id="darkModeBtn">
+<i class="fa-solid fa-moon"></i>
+</button>
+<header class="hero">
+    <nav>
+        <div class="logo">
+            Portfolio
+        </div>
+        <ul>
+            <li><a href="main.html">首頁</a></li>
+            <li><a href="main.html#about">關於我</a></li>
+            <li><a href="main.html#education">教育背景</a></li>
+            <li><a href="main.html#experience">經驗</a></li>
+            <li><a href="main.html#skills">技能</a></li>
+            <li><a href="#portfolio">作品</a></li>
+            <li><a href="#awards">榮譽</a></li>
+            <li><a href="#gallery">活動照片</a></li>
+        </ul>
+    </nav>
+    <div class="hero-content">
+        <h1>作品與榮譽</h1>
+        <p>
+            這裡收錄我的專案作品、得獎紀錄與活動照片。
+        </p>
+        <a href="main.html" class="btn">
+            回到首頁
+        </a>
+    </div>
+</header>
+<section id="portfolio" class="card">
+    <h2>專案作品</h2>
+    <div class="project">
+        <img src="./project.png" alt="專案作品圖示">
+        <h2>寵物用品與美容預約系統</h2>
+        <h3 style="color: #122476;">資料庫程式設計期末專題</h3>
+        <p>
+            在此專案中，我主動負責系統核心邏輯開發。主要實作「一般使用者與管理員」的權限分流，
+            <br>並獨立完成購物車、線上訂購流程及訂單列表等關鍵電商模組，成功打造流暢穩定的交易體驗。
+        </p>
+    </div>
+</section>
+<section id="awards" class="card">
+    <h2>獲獎與榮譽</h2>
+    <ul>
+        <li>書卷獎</li>
+        <li>國貿證照</li>
+    </ul>
+</section>
+<section id="gallery" class="card">
+    <h2>活動照片</h2>
+    <div class="gallery">
+        <div>
+            <h3 style="text-align: center; color: #122476; border-bottom: 2px solid #122476;">資管系女排在校長盃取得了第四名的好成績</h3>
+            <img src="ball.jpg" alt="活動照片：球隊比賽場景">
+        </div>
+        <div>
+            <h3 style="text-align: center; color: #122476; border-bottom: 2px solid #122476;">擔任交通隊的幹部，協助校內交管與籌辦交通安全活動</h3>
+            <img src="clab.jpg " alt="活動照片：場館與隊員合照">
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>© 2026 資管二乙 U1333132 蔡閔宣</p>
+</footer>
+<script>
+const btn = document.getElementById("darkModeBtn");
+btn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+});
+</script>
+</body>
+</html>
